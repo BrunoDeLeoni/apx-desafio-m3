@@ -21,41 +21,37 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
-/*  font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto', sans-serif;      */
-
 body{
     margin: 0px;
     min-width: 320px;
 }
 
+/* HEADER */
 .header{
     background-image: url("./image/fondo.png");
     height: 600px;
     width: 100%;
 }
 
+/* MENU */
 .main{
     height: 90px;
     width: 100%;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 }
 
-.logo{
-    height: 50px;
-    margin: 20px;
-}
-
+.logo,
 .main-options-icon{
     height: 50px;
-    margin: 20px;
 }
 
 .main-options{
     display: none;
 }
 
+/* WELCOME */
 .welcome{
     height: 510px;
     width: 100%;
@@ -78,6 +74,7 @@ body{
     display: none;
 }
 
+/* NEW PRODUCT */
 .info{
     background: #141414;
     height: 530px;
@@ -112,6 +109,7 @@ body{
     justify-content: center;
 }
 
+/* NUESTROS PRODUCTOS */
 .services{
     display: grid;
 }
@@ -149,32 +147,118 @@ body{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* CONTACTO */
 .contact{
-    border: black solid;
+    background: #141414;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-row: auto;
+    justify-content: center;
+    align-items: center;
 }
 
+.title-contact{
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* FORMULARIO */
+.form{
+    min-width: 320px;
+    max-width: 500px;
+    display: grid;
+    gap: 5px;
+}
+
+.fielset{
+    display: grid;
+    padding: 10px;
+    gap: 5px;
+}
+
+.label{
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    font-size: 13px;
+    color: white;
+}
+
+.input-name,
+.input-email,
+.input-textarea{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    border: none;
+    display: block;
+    width: 100%;
+    border-radius: 1px;
+    padding: 5px;
+}
+
+.input-textarea{
+    width: 100%;
+    min-width: 100%;
+    height: 200px;
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+/* BOTON */
+.button-send{
+padding: 10px;
+}
+
+.button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    background-color: rgba(255, 217, 83, 1);
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 24px;
+    border: none;
+    border-radius: 1px;
+}
+
+/* FOOTER */
 .footer{
-    border: black solid;
+    background-color: whitesmoke;
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* DVLP DESING */
+.footer-box{
+    display: grid;
+}
+
+.logo-box{
+    font-size: 15px;
+    padding: 20px;
+}
+
+.logo{
+    display: grid;
+}
+
+/* LINK */
+.link-box{
+    padding: 20px;
+}
+
+.link-instagram,
+.link-linkedin,
+.link-github{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.link{
+    padding: 5px;
 }
