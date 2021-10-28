@@ -4,10 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Desafio HTML / CSS</title>
 </head>
 <body>
-    
+    <section class="header">
+        <div class="main">
+            <img class="logo" src="./image/logo_tddy.png" alt="logotipo">
+            <img class="main-options-icon" src="./image/icon-main.png" alt="main-options">
+            <div class="main-options">
+
+            </div>
+        </div>
+        <div class="welcome">
+            <h1 class="text-welcome">Welcome to TDDY</h1>
+            <img class="welcome-img-mobile" src="./image/hik-mobile.png" alt="photo-welcome">
+            <img class="welcome-img-extend" src="./image/hik-extend.png" alt="photo-welcome">
+        </div>
+    </section>
+    <section class="info">
+        <div class="product-new">
+            <h2 class="title-product-new">ColorVu</h2>
+            <p class="text-description">Tencologia ColorVu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus. Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies dolor.</p>
+        </div>
+        <img class="img-product-new" src="./image/logo_colorvu.png" alt="colorvu">
+    </section>
+    <section class="services">
+        <h2 class="title-services">Nuestros Productos</h2>
+        <div class="products">
+            <div class="product-1">
+                <img src="./image/dvr.png" alt="nvr">
+                <h3 class="title-product">NVR</h3>
+                <p class="text-product">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, vel nemo distinctio omnis eos numquam asperiores minima! Incidunt nemo assumenda doloremque cumque eius iusto, alias minima, voluptas quidem eaque dolores?</p>
+            </div>
+            <div class="product-2">
+                <img src="./image/cam-ip.png" alt="cam-ip">
+                <h3 class="title-product">Cámaras IP</h3>
+                <p class="text-product">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consequuntur similique autem, sunt cupiditate magnam ducimus vel reiciendis provident tenetur fuga necessitatibus ab ratione accusantium esse nobis aspernatur nulla eaque?</p>
+            </div>
+            <div class="product-3">
+                <img src="./image/ubiquiti.png" alt="p2p">
+                <h3 class="title-product">Enlaces</h3>
+                <p class="text-product">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vel hic, dignissimos amet corrupti et facilis commodi debitis itaque voluptatum culpa. Aperiam libero, quidem laboriosam sunt fuga sint. Quaerat, eum?</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="fielset">
+            <label for="name" class="label">Nombre</label>
+            <input type="text" id="name" class="input-name">
+        </div>
+        <div class="fielset">
+            <label for="email" class="label">Email</label>
+            <input type="email" id="email" class="input-email">
+        </div>
+        <div class="fielset">
+            <label for="message" class="label">Mensaje</label>
+            <textarea class="input-textarea" id="message" type="text"></textarea>
+        </div>
+        <div class="button-send">
+            <button class="button">Enviar</button>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-end">
+            <div class="box-icon">
+                <img class="logo" src="./image/logo_tddy.png" alt="logotipo">
+                <label for="" class="footer-label">© 2021 Bruno</label>
+            </div>
+            <div class="link-box">
+                <div class="link-instagram">
+                    <img class="img-link" src="./image/instagram.png" alt="instagram">
+                    <a id="instagram" class="link" href="http://instagram.com/tddy.visiontecnologica/">Instagram</a>
+                </div>
+                <div class="link-linkedin">
+                    <img class="img-link" id="linkedin" class="link" src="./image/linkedin.png" alt="linkedin">
+                    <a class="link" href="http://linkedin.com/">Linkedin</a>
+                </div>
+                <div class="link-github">
+                    <img class="img-link" src="./image/github.png" alt="github">
+                    <a class="link" href="http://github.com/">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

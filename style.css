@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;      */
+
+body{
+    margin: 0px;
+    min-width: 250px;
+}
+
+.header{
+    background-image: url("./image/fondo.png");
+    height: 600px;
+    width: 100%;    
+}
+
+.main{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 50px;
+    margin: 20px;
+}
+
+.main-options-icon{
+    height: 50px;
+    margin: 20px;
+}
+
+.main-options{
+    display: none;
+}
+
+.welcome{
+    height: 510px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-welcome{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.welcome-img-mobile{
+    margin: 0 auto;
+}
+
+.welcome-img-extend{
+    display: none;
+}
+
+.info{
+    background: #141414;
+    height: 540px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.product-new{
+}
+
+.title-product-new{
+    color: white;
+    text-align: center;
+}
+
+.text-description{
+    color: white;
+    font-size: 16px;
+    padding: 31px;
+}
+
+.img-product-new{
+    width: 110px;
+    margin: 0 auto;
+}
+
+.services{
+    border: green solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+    border: red solid;
+}
+
+.footer{
+    border: yellow solid;
+}
