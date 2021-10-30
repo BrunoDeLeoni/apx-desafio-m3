@@ -63,21 +63,21 @@ body{
 }
 
 /* MENU MOBILE */
-.main-options-icon{
+.main-mobile{
     height: 50px;
 }
 @media (min-width: 768px){
-    .main-options-icon{
+    .main-mobile{
         display: none;
     }
 }
 
 /* MENU DESKTOP */
-.main-options{
+.main-desktop{
     display: none;
 }
 @media (min-width: 768px){
-    .main-options{
+    .main-desktop{
         font-family: 'Roboto', sans-serif;
         font-size: 24px;
         display: flex;
@@ -96,7 +96,6 @@ body{
 }
 @media (min-width: 768px){
     .welcome{
-
         display: grid;
         grid-template-columns: auto auto;
         justify-content: space-between;
@@ -104,14 +103,14 @@ body{
 }
 
 /* WELCOME TO TDDY */
-.text-welcome{
+.welcome-text{
     width: 300px;
     padding: 30px;
     margin: 0 auto;
     text-align: center;
 }
 @media (min-width: 768px){
-    .text-welcome{
+    .welcome-text{
         text-align: start;
     }
 }
@@ -128,87 +127,142 @@ body{
 }
 
 /* WELCOME - IMG - DESKTOP */
-.welcome-img-extend{
+.welcome-img-desktop{
     display: none;
 }
 @media (min-width: 768px){
-    .welcome-img-extend{
+    .welcome-img-desktop{
         max-width: 400px;
         display: grid;
         align-self: end;
     }
 }
 
-/* NEW PRODUCT */
-.info{
+/* NOVEDADES */
+.novedades{
     background: #141414;
     height: 530px;
     width: 100%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media (min-width: 768px){
+    .novedades{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
 }
 
+/* NEW PRODUCT */
 .product-new{
     margin: 0 auto;
     padding: 20px;
     gap: 20px;
+    text-align: center;
 }
 
-.title-product-new{
+/* TITULO - NEW PRODUCT */
+.product-new-title{
     color: white;
     text-align: center;
     padding: auto;
 }
+@media (min-width: 768px){
+    .product-new-title{
+        text-align: start;
+    }
+}
 
-.text-description{
+/* DESCRIPCION - NEW PRODUCT */
+.product-new-text{
     color: white;
     font-size: 16px;
     max-width: 380px;
 }
+@media (min-width: 768px){
+    .product-new-text{
+        text-align: start;
+    }
+}
 
-.img-product-new{
-    height: 140px;
+/* IMG - NEW PRODUCT */
+.product-new-img{
+    height: 190px;
     margin: 0px auto;
     display: flex;
     justify-content: center;
 }
+@media (min-width: 768px){
+    .product-new-img{
+        height: 230px;
+    }
+}
 
-/* NUESTROS PRODUCTOS */
+/* SERVICIOS */
 .services{
     display: grid;
 }
+@media (min-width: 768px){
+    .services{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+}
 
+/* NUESTROS PRODUCTOS */
 .title-services{
-    margin-top: 50px;
+    margin: 50px auto;
     padding: 10px;
     text-align: center;
 }
 
+/* PRODUCTOS BOX */
 .products{
     margin: auto;
-    max-width: 450px;
+    max-width: 400px;
     display: grid;
-    gap: 20px;
+    gap: 40px;
+}
+@media (min-width: 768px){
+    .products{
+        max-width: none;
+        display: flex;
+        flex-direction: row;
+    }
 }
 
+/* PRODUCTO */
 .product{
-    padding: 40px;
+    padding: 10px;
     margin: 0 auto;
+    display: grid;
+    grid-template-rows: 120px 80px auto;
+    justify-content: center;
+    align-items:flex-start;
+}
+@media (min-width: 768px){
+    .product{
+        max-width: 300px;
+    }
 }
 
-.img-product{
+.product-img{
     max-height: 140px;
     max-width: 240px;
     margin: 0px auto;
     display: flex;
 }
 
-.title-product{
+.product-title{
+    padding-top: 10px;
     text-align: center;
 }
 
-.text-product{
+.product-text{
     text-align: center;
 }
 
@@ -222,16 +276,33 @@ body{
     justify-content: center;
     align-items: center;
 }
+@media (min-width: 768px){
+    .contact{
+        border: blueviolet solid;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+}
 
-.title-contact{
+/* ESCRIBIME */
+.contact-title{
     color: white;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
+@media (min-width: 768px){
+    .contact-title{
+        border: blueviolet solid;
+        display: grid;
+        align-self:flex-start;
+    }
+}
 
 /* FORMULARIO */
 .form{
+    border: blueviolet solid;
     min-width: 320px;
     max-width: 500px;
     display: grid;
@@ -300,12 +371,21 @@ padding: 10px;
     font-family: 'Roboto', sans-serif;
 }
 
-/* DVLP DESING */
+/* FOOTER BOX */
 .footer-box{
     display: grid;
 }
+@media (min-width: 768px){
+    .footer-box{
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+    }
+}
 
-.logo-box{
+/* DVLP DESING */
+.footer-logo{
     font-size: 15px;
     padding: 20px;
 }
@@ -315,7 +395,7 @@ padding: 10px;
 }
 
 /* LINK */
-.link-box{
+.footer-link{
     padding: 20px;
 }
 
